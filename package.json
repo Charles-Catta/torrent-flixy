@@ -1,0 +1,7 @@
+{
+  "name": "torrent-flixy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Charles Catta",
+  "license": "MIT"
+}
