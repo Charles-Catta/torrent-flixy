@@ -1,7 +1,7 @@
 image: golang:latest
 
 variables:
-  REPO_NAME: github.com/Charles-Catta/torrent-flixy
+  REPO_NAME: github.com/CharlesCatta/torrent-flixy
 
 before_script:
   - mkdir -p $GOPATH/src/$(dirname $REPO_NAME)
