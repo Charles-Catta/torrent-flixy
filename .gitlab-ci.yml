@@ -1,4 +1,4 @@
-image: lushdigital/docker-golang-dep
+image: golang:latest
 
 variables:
   REPO_NAME: github.com/CharlesCatta/torrent-flixy
