@@ -6,14 +6,14 @@ variables:
 before_script:
   - mkdir -p $GOPATH/src/$(dirname $REPO_NAME)
   - ln -svf $CI_PROJECT_DIR $GOPATH/src/$REPO_NAME
-  - cd $GOPATH/src/$REPO_NAME/server/
-
+  - $GOPATH/src/$REPO_NAME/server cd dep ensure
 stages:
   - test
 
 format:
   stage: test
   script:
+    - cd server
     - go fmt $(go list ./.. | grep -v /vendor/)
     - go vet $(go list ./.. | grep -v /vendor/)
     - go test -race $(go list ./... | grep -v /vendor/)
