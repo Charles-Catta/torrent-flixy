@@ -4,10 +4,6 @@ variables:
   REPO_NAME: github.com/CharlesCatta/torrent-flixy
 
 before_script:
-  - mkdir -p $GOPATH/src/$(dirname $REPO_NAME)
-  - ln -svf $CI_PROJECT_DIR $GOPATH/src/$REPO_NAME
-  - ls $GOPATH/src/$REPO_NAME/server
-  - cd $GOPATH/src/$REPO_NAME/server 
   - dep ensure
 stages:
   - test
