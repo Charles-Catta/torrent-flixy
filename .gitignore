@@ -1,3 +1,2 @@
-client/node_modules
-server/vendor
+assets/node_modules
 .DS_Store
