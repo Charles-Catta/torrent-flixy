@@ -1,1 +1,1 @@
-# Torrent Flixy
+# Flixy
