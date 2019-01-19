@@ -1,1 +1,1 @@
-# Flixy
+# Flix
